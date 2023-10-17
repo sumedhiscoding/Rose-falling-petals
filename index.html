@@ -2,52 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="glass"></div>
-      <div class="thorns">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="glow"></div>
-      <div class="rose-leaves">
-        <div></div>
-        <div></div>
-      </div>
-      <div class="rose-petals">
-        <div></div>
-        <div>
-          <span style="color: wheat;"> <div style="transform: rotateZ(90deg); padding-top:35px ;padding-left: 20px;">
-            Radnesha
-          </div>  </span>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="sparkles">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div style="color: wheat;">Will you be <br>
-        my Valentine</div>
+    <div>
+      <p for="name"
+        >
+        Qn] Kiske saath(starts with l) _____ kya karna hai 
+        (starts with g) _____ put a space between the two words
+        ❤️💕😎 keep everything smallercase ?</p>
+      >
+      <input type="text" name="name" id="cool" />
     </div>
+    <a href="index2.html" id="clickHere" style="display: none">Click here</a>
   </body>
+  <script>
+    document.getElementById("cool").addEventListener("input", function () {
+      var inputValue = this.value.trim(); // Get the trimmed input value
+      var clickHereLink = document.getElementById("clickHere");
+
+      if (inputValue === "lulu gulugulu") {
+        clickHereLink.style.display = "block"; // Show the link
+      } else {
+        clickHereLink.style.display = "none"; // Hide the link
+      }
+    });
+  </script>
 </html>
